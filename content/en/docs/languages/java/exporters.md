@@ -294,7 +294,7 @@ scrape_configs:
 Run Prometheus in a docker container with the UI accessible on port `9090`:
 
 ```shell
-docker run --rm -v ${PWD}/prometheus.yml:/prometheus/prometheus.yml -p 9090:9090 prom/prometheus --enable-feature=otlp-write-receive
+docker run --rm -v ${PWD}/prometheus.yml:/prometheus/prometheus.yml -p 9090:9090 prom/prometheus --enable-feature=otlp-write-receiver
 ```
 
 {{% alert title="Note" color="info" %}}
